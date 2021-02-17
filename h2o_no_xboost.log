@@ -1,0 +1,466 @@
+[2021-02-12 20:14:12,126 - INFO - Automl model for scenario ISOT_metrics
+[2021-02-12 20:14:12,149 - INFO - {
+    "algo_full_name": "Gradient Boosting Machine",
+    "params": {
+        "auc_type": "AUTO",
+        "balance_classes": false,
+        "build_tree_one_node": false,
+        "calibrate_model": false,
+        "calibration_frame": null,
+        "categorical_encoding": "Enum",
+        "check_constant_response": true,
+        "checkpoint": null,
+        "class_sampling_factors": null,
+        "col_sample_rate": 0.8,
+        "col_sample_rate_change_per_level": 1.0,
+        "col_sample_rate_per_tree": 0.8,
+        "custom_distribution_func": null,
+        "custom_metric_func": null,
+        "distribution": "bernoulli",
+        "export_checkpoints_dir": null,
+        "fold_assignment": "Modulo",
+        "fold_column": null,
+        "gainslift_bins": -1,
+        "histogram_type": "UniformAdaptive",
+        "huber_alpha": 0.9,
+        "ignore_const_cols": true,
+        "ignored_columns": [],
+        "keep_cross_validation_fold_assignment": false,
+        "keep_cross_validation_models": false,
+        "keep_cross_validation_predictions": true,
+        "learn_rate": 0.1,
+        "learn_rate_annealing": 1.0,
+        "max_abs_leafnode_pred": 1.7976931348623157e+308,
+        "max_after_balance_size": 5.0,
+        "max_confusion_matrix_size": 20,
+        "max_depth": 6,
+        "max_runtime_secs": 0.0,
+        "min_rows": 1.0,
+        "min_split_improvement": 1e-05,
+        "model_id": "GBM_1_AutoML_20210212_201240",
+        "monotone_constraints": null,
+        "nbins": 20,
+        "nbins_cats": 1024,
+        "nbins_top_level": 1024,
+        "nfolds": 5,
+        "ntrees": 30,
+        "offset_column": null,
+        "pred_noise_bandwidth": 0.0,
+        "quantile_alpha": 0.5,
+        "r2_stopping": 1.7976931348623157e+308,
+        "response_column": "y",
+        "sample_rate": 0.8,
+        "sample_rate_per_class": null,
+        "score_each_iteration": false,
+        "score_tree_interval": 5,
+        "seed": 3,
+        "stopping_metric": "AUC",
+        "stopping_rounds": 0,
+        "stopping_tolerance": 0.012382536099092283,
+        "training_frame": "automl_training_py_2_sid_9b4f",
+        "tweedie_power": 1.5,
+        "validation_frame": null,
+        "weights_column": null
+    }
+}
+[2021-02-12 20:14:12,150 - INFO - Metrics for scenario ISOT_metrics test anticipation
+[2021-02-12 20:14:12,194 - INFO - [[18  0]
+ [ 0  7]]
+[2021-02-12 20:14:12,200 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        18
+           1       1.00      1.00      1.00         7
+
+    accuracy                           1.00        25
+   macro avg       1.00      1.00      1.00        25
+weighted avg       1.00      1.00      1.00        25
+
+[2021-02-12 20:14:12,207 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 7,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 7,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 18,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 18,
+    'total_accuracy': 1.0,
+    'true_negative': 18,
+    'true_positive': 7}
+[2021-02-12 20:14:12,209 - INFO - Metrics for scenario ISOT_metrics test testing
+[2021-02-12 20:14:12,493 - INFO - [[106   0]
+ [  2  22]]
+[2021-02-12 20:14:12,513 - INFO -               precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99       106
+           1       1.00      0.92      0.96        24
+
+    accuracy                           0.98       130
+   macro avg       0.99      0.96      0.97       130
+weighted avg       0.98      0.98      0.98       130
+
+[2021-02-12 20:14:12,529 - INFO - Model metrics {   'bot_f1-score': 0.9565217391304348,
+    'bot_occurrences_in_training': 24,
+    'bot_precision': 1.0,
+    'bot_recall': 0.9166666666666666,
+    'bot_support': 24,
+    'false_negative': 2,
+    'false_positive': 0,
+    'nonbot_f1-score': 0.9906542056074767,
+    'nonbot_occurrences_in_training': 106,
+    'nonbot_precision': 0.9814814814814815,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 106,
+    'total_accuracy': 0.9846153846153847,
+    'true_negative': 106,
+    'true_positive': 22}
+[2021-02-12 20:14:12,533 - INFO - Starting scenario CTU_metrics
+[2021-02-12 20:14:12,568 - INFO - Starting ANTE-H2-NOXBOOST fit
+[2021-02-12 20:15:45,933 - INFO - Automl model for scenario CTU_metrics
+[2021-02-12 20:15:45,959 - INFO - {
+    "algo_full_name": "Distributed Random Forest",
+    "params": {
+        "auc_type": "AUTO",
+        "balance_classes": false,
+        "binomial_double_trees": false,
+        "build_tree_one_node": false,
+        "calibrate_model": false,
+        "calibration_frame": null,
+        "categorical_encoding": "Enum",
+        "check_constant_response": true,
+        "checkpoint": null,
+        "class_sampling_factors": null,
+        "col_sample_rate_change_per_level": 1.0,
+        "col_sample_rate_per_tree": 1.0,
+        "custom_metric_func": null,
+        "distribution": "multinomial",
+        "export_checkpoints_dir": null,
+        "fold_assignment": "Modulo",
+        "fold_column": null,
+        "gainslift_bins": -1,
+        "histogram_type": "Random",
+        "ignore_const_cols": true,
+        "ignored_columns": [],
+        "keep_cross_validation_fold_assignment": false,
+        "keep_cross_validation_models": false,
+        "keep_cross_validation_predictions": true,
+        "max_after_balance_size": 5.0,
+        "max_confusion_matrix_size": 20,
+        "max_depth": 20,
+        "max_runtime_secs": 0.0,
+        "min_rows": 1.0,
+        "min_split_improvement": 1e-05,
+        "model_id": "XRT_1_AutoML_20210212_201413",
+        "mtries": -1,
+        "nbins": 20,
+        "nbins_cats": 1024,
+        "nbins_top_level": 1024,
+        "nfolds": 5,
+        "ntrees": 35,
+        "offset_column": null,
+        "r2_stopping": 1.7976931348623157e+308,
+        "response_column": "y",
+        "sample_rate": 0.632,
+        "sample_rate_per_class": null,
+        "score_each_iteration": false,
+        "score_tree_interval": 5,
+        "seed": 9,
+        "stopping_metric": "AUC",
+        "stopping_rounds": 0,
+        "stopping_tolerance": 0.015502478656928756,
+        "training_frame": "automl_training_py_119_sid_9b4f",
+        "validation_frame": null,
+        "weights_column": null
+    }
+}
+[2021-02-12 20:15:45,961 - INFO - Metrics for scenario CTU_metrics test anticipation
+[2021-02-12 20:15:46,012 - INFO - [[12  0]
+ [ 0  1]]
+[2021-02-12 20:15:46,018 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        12
+           1       1.00      1.00      1.00         1
+
+    accuracy                           1.00        13
+   macro avg       1.00      1.00      1.00        13
+weighted avg       1.00      1.00      1.00        13
+
+[2021-02-12 20:15:46,024 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 1,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 1,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 12,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 12,
+    'total_accuracy': 1.0,
+    'true_negative': 12,
+    'true_positive': 1}
+[2021-02-12 20:15:46,030 - INFO - Metrics for scenario CTU_metrics test testing
+[2021-02-12 20:15:46,079 - INFO - [[29  0]
+ [ 0 40]]
+[2021-02-12 20:15:46,085 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        29
+           1       1.00      1.00      1.00        40
+
+    accuracy                           1.00        69
+   macro avg       1.00      1.00      1.00        69
+weighted avg       1.00      1.00      1.00        69
+
+[2021-02-12 20:15:46,092 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 40,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 40,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 29,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 29,
+    'total_accuracy': 1.0,
+    'true_negative': 29,
+    'true_positive': 40}
+[2021-02-12 20:15:46,094 - INFO - Starting scenario IoT_Dataset_HTTP_DDoS
+[2021-02-12 20:15:46,143 - INFO - Starting ANTE-H2-NOXBOOST fit
+[2021-02-12 20:17:18,489 - INFO - Automl model for scenario IoT_Dataset_HTTP_DDoS
+[2021-02-12 20:17:18,500 - INFO - {
+    "algo_full_name": "Distributed Random Forest",
+    "params": {
+        "auc_type": "AUTO",
+        "balance_classes": false,
+        "binomial_double_trees": false,
+        "build_tree_one_node": false,
+        "calibrate_model": false,
+        "calibration_frame": null,
+        "categorical_encoding": "Enum",
+        "check_constant_response": true,
+        "checkpoint": null,
+        "class_sampling_factors": null,
+        "col_sample_rate_change_per_level": 1.0,
+        "col_sample_rate_per_tree": 1.0,
+        "custom_metric_func": null,
+        "distribution": "multinomial",
+        "export_checkpoints_dir": null,
+        "fold_assignment": "Modulo",
+        "fold_column": null,
+        "gainslift_bins": -1,
+        "histogram_type": "Random",
+        "ignore_const_cols": true,
+        "ignored_columns": [],
+        "keep_cross_validation_fold_assignment": false,
+        "keep_cross_validation_models": false,
+        "keep_cross_validation_predictions": true,
+        "max_after_balance_size": 5.0,
+        "max_confusion_matrix_size": 20,
+        "max_depth": 20,
+        "max_runtime_secs": 0.0,
+        "min_rows": 1.0,
+        "min_split_improvement": 1e-05,
+        "model_id": "XRT_1_AutoML_20210212_201546",
+        "mtries": -1,
+        "nbins": 20,
+        "nbins_cats": 1024,
+        "nbins_top_level": 1024,
+        "nfolds": 5,
+        "ntrees": 35,
+        "offset_column": null,
+        "r2_stopping": 1.7976931348623157e+308,
+        "response_column": "y",
+        "sample_rate": 0.632,
+        "sample_rate_per_class": null,
+        "score_each_iteration": false,
+        "score_tree_interval": 5,
+        "seed": 9,
+        "stopping_metric": "AUC",
+        "stopping_rounds": 0,
+        "stopping_tolerance": 0.017498140921285422,
+        "training_frame": "automl_training_py_228_sid_9b4f",
+        "validation_frame": null,
+        "weights_column": null
+    }
+}
+[2021-02-12 20:17:18,502 - INFO - Metrics for scenario IoT_Dataset_HTTP_DDoS test anticipation
+[2021-02-12 20:17:19,006 - INFO - [[528   0]
+ [  0 198]]
+[2021-02-12 20:17:19,016 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       528
+           1       1.00      1.00      1.00       198
+
+    accuracy                           1.00       726
+   macro avg       1.00      1.00      1.00       726
+weighted avg       1.00      1.00      1.00       726
+
+[2021-02-12 20:17:19,026 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 198,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 198,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 528,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 528,
+    'total_accuracy': 1.0,
+    'true_negative': 528,
+    'true_positive': 198}
+[2021-02-12 20:17:19,028 - INFO - Metrics for scenario IoT_Dataset_HTTP_DDoS test testing
+[2021-02-12 20:17:19,603 - INFO - [[1954  741]
+ [   0  867]]
+[2021-02-12 20:17:19,615 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      0.73      0.84      2695
+           1       0.54      1.00      0.70       867
+
+    accuracy                           0.79      3562
+   macro avg       0.77      0.86      0.77      3562
+weighted avg       0.89      0.79      0.81      3562
+
+[2021-02-12 20:17:19,628 - INFO - Model metrics {   'bot_f1-score': 0.7006060606060607,
+    'bot_occurrences_in_training': 867,
+    'bot_precision': 0.539179104477612,
+    'bot_recall': 1.0,
+    'bot_support': 867,
+    'false_negative': 0,
+    'false_positive': 741,
+    'nonbot_f1-score': 0.8406108840610884,
+    'nonbot_occurrences_in_training': 2695,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 0.7250463821892393,
+    'nonbot_support': 2695,
+    'total_accuracy': 0.791970802919708,
+    'true_negative': 1954,
+    'true_positive': 867}
+[2021-02-12 20:17:19,630 - INFO - Starting scenario CICDOS_metrics
+[2021-02-12 20:17:19,675 - INFO - Starting ANTE-H2-NOXBOOST fit
+[2021-02-12 20:18:54,207 - INFO - Automl model for scenario CICDOS_metrics
+[2021-02-12 20:18:54,217 - INFO - {
+    "algo_full_name": "Gradient Boosting Machine",
+    "params": {
+        "auc_type": "AUTO",
+        "balance_classes": false,
+        "build_tree_one_node": false,
+        "calibrate_model": false,
+        "calibration_frame": null,
+        "categorical_encoding": "Enum",
+        "check_constant_response": true,
+        "checkpoint": null,
+        "class_sampling_factors": null,
+        "col_sample_rate": 0.8,
+        "col_sample_rate_change_per_level": 1.0,
+        "col_sample_rate_per_tree": 0.8,
+        "custom_distribution_func": null,
+        "custom_metric_func": null,
+        "distribution": "bernoulli",
+        "export_checkpoints_dir": null,
+        "fold_assignment": "Modulo",
+        "fold_column": null,
+        "gainslift_bins": -1,
+        "histogram_type": "UniformAdaptive",
+        "huber_alpha": 0.9,
+        "ignore_const_cols": true,
+        "ignored_columns": [],
+        "keep_cross_validation_fold_assignment": false,
+        "keep_cross_validation_models": false,
+        "keep_cross_validation_predictions": true,
+        "learn_rate": 0.1,
+        "learn_rate_annealing": 1.0,
+        "max_abs_leafnode_pred": 1.7976931348623157e+308,
+        "max_after_balance_size": 5.0,
+        "max_confusion_matrix_size": 20,
+        "max_depth": 6,
+        "max_runtime_secs": 0.0,
+        "min_rows": 1.0,
+        "min_split_improvement": 1e-05,
+        "model_id": "GBM_1_AutoML_20210212_201720",
+        "monotone_constraints": null,
+        "nbins": 20,
+        "nbins_cats": 1024,
+        "nbins_top_level": 1024,
+        "nfolds": 5,
+        "ntrees": 30,
+        "offset_column": null,
+        "pred_noise_bandwidth": 0.0,
+        "quantile_alpha": 0.5,
+        "r2_stopping": 1.7976931348623157e+308,
+        "response_column": "y",
+        "sample_rate": 0.8,
+        "sample_rate_per_class": null,
+        "score_each_iteration": false,
+        "score_tree_interval": 5,
+        "seed": 3,
+        "stopping_metric": "AUC",
+        "stopping_rounds": 0,
+        "stopping_tolerance": 0.011457979006778843,
+        "training_frame": "automl_training_py_335_sid_9b4f",
+        "tweedie_power": 1.5,
+        "validation_frame": null,
+        "weights_column": null
+    }
+}
+[2021-02-12 20:18:54,219 - INFO - Metrics for scenario CICDOS_metrics test anticipation
+[2021-02-12 20:18:54,477 - INFO - [[46  0]
+ [ 0  1]]
+[2021-02-12 20:18:54,487 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        46
+           1       1.00      1.00      1.00         1
+
+    accuracy                           1.00        47
+   macro avg       1.00      1.00      1.00        47
+weighted avg       1.00      1.00      1.00        47
+
+[2021-02-12 20:18:54,495 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 1,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 1,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 46,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 46,
+    'total_accuracy': 1.0,
+    'true_negative': 46,
+    'true_positive': 1}
+[2021-02-12 20:18:54,497 - INFO - Metrics for scenario CICDOS_metrics test testing
+[2021-02-12 20:18:54,772 - INFO - [[317   0]
+ [  0   4]]
+[2021-02-12 20:18:54,777 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       317
+           1       1.00      1.00      1.00         4
+
+    accuracy                           1.00       321
+   macro avg       1.00      1.00      1.00       321
+weighted avg       1.00      1.00      1.00       321
+
+[2021-02-12 20:18:54,785 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 4,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 4,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 317,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 317,
+    'total_accuracy': 1.0,
+    'true_negative': 317,
+    'true_positive': 4}

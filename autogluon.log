@@ -1,0 +1,284 @@
+[2021-02-12 10:52:49,628 - INFO - Starting experiments
+[2021-02-12 10:52:49,630 - INFO - Starting scenario ISOT_metrics
+[2021-02-12 10:52:49,677 - INFO - Starting ANTE-AG fit
+[2021-02-12 10:53:17,408 - INFO - Automl model for scenario ISOT_metrics
+[2021-02-12 10:53:17,598 - INFO - {
+    "model": "LightGBMClassifier",
+    "model_hyperparams": {
+        "boosting_type": "gbdt",
+        "num_boost_round": 10000,
+        "num_threads": -1,
+        "objective": "binary",
+        "two_round": true,
+        "verbose": -1
+    },
+    "model_type": "LGBModel"
+}
+[2021-02-12 10:53:17,605 - INFO - Metrics for scenario ISOT_metrics test anticipation
+[2021-02-12 10:53:17,664 - INFO - [[18  0]
+ [ 1  6]]
+[2021-02-12 10:53:17,674 - INFO -               precision    recall  f1-score   support
+
+           0       0.95      1.00      0.97        18
+           1       1.00      0.86      0.92         7
+
+    accuracy                           0.96        25
+   macro avg       0.97      0.93      0.95        25
+weighted avg       0.96      0.96      0.96        25
+
+[2021-02-12 10:53:17,686 - INFO - Model metrics {   'bot_f1-score': 0.923076923076923,
+    'bot_occurrences_in_training': 7,
+    'bot_precision': 1.0,
+    'bot_recall': 0.8571428571428571,
+    'bot_support': 7,
+    'false_negative': 1,
+    'false_positive': 0,
+    'nonbot_f1-score': 0.972972972972973,
+    'nonbot_occurrences_in_training': 18,
+    'nonbot_precision': 0.9473684210526315,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 18,
+    'total_accuracy': 0.96,
+    'true_negative': 18,
+    'true_positive': 6}
+[2021-02-12 10:53:17,693 - INFO - Metrics for scenario ISOT_metrics test testing
+[2021-02-12 10:53:17,758 - INFO - [[106   0]
+ [  3  21]]
+[2021-02-12 10:53:17,769 - INFO -               precision    recall  f1-score   support
+
+           0       0.97      1.00      0.99       106
+           1       1.00      0.88      0.93        24
+
+    accuracy                           0.98       130
+   macro avg       0.99      0.94      0.96       130
+weighted avg       0.98      0.98      0.98       130
+
+[2021-02-12 10:53:17,780 - INFO - Model metrics {   'bot_f1-score': 0.9333333333333333,
+    'bot_occurrences_in_training': 24,
+    'bot_precision': 1.0,
+    'bot_recall': 0.875,
+    'bot_support': 24,
+    'false_negative': 3,
+    'false_positive': 0,
+    'nonbot_f1-score': 0.986046511627907,
+    'nonbot_occurrences_in_training': 106,
+    'nonbot_precision': 0.9724770642201835,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 106,
+    'total_accuracy': 0.9769230769230769,
+    'true_negative': 106,
+    'true_positive': 21}
+[2021-02-12 10:53:17,788 - INFO - Starting scenario CTU_metrics
+[2021-02-12 10:53:17,829 - INFO - Starting ANTE-AG fit
+[2021-02-12 10:53:38,320 - INFO - Automl model for scenario CTU_metrics
+[2021-02-12 10:53:38,391 - INFO - {
+    "model": "LightGBMClassifierXT",
+    "model_hyperparams": {
+        "boosting_type": "gbdt",
+        "extra_trees": true,
+        "num_boost_round": 10000,
+        "num_threads": -1,
+        "objective": "binary",
+        "two_round": true,
+        "verbose": -1
+    },
+    "model_type": "LGBModel"
+}
+[2021-02-12 10:53:38,393 - INFO - Metrics for scenario CTU_metrics test anticipation
+[2021-02-12 10:53:38,414 - INFO - [[12  0]
+ [ 0  1]]
+[2021-02-12 10:53:38,422 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        12
+           1       1.00      1.00      1.00         1
+
+    accuracy                           1.00        13
+   macro avg       1.00      1.00      1.00        13
+weighted avg       1.00      1.00      1.00        13
+
+[2021-02-12 10:53:38,431 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 1,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 1,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 12,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 12,
+    'total_accuracy': 1.0,
+    'true_negative': 12,
+    'true_positive': 1}
+[2021-02-12 10:53:38,436 - INFO - Metrics for scenario CTU_metrics test testing
+[2021-02-12 10:53:38,461 - INFO - [[29  0]
+ [ 0 40]]
+[2021-02-12 10:53:38,469 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        29
+           1       1.00      1.00      1.00        40
+
+    accuracy                           1.00        69
+   macro avg       1.00      1.00      1.00        69
+weighted avg       1.00      1.00      1.00        69
+
+[2021-02-12 10:53:38,478 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 40,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 40,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 29,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 29,
+    'total_accuracy': 1.0,
+    'true_negative': 29,
+    'true_positive': 40}
+[2021-02-12 10:53:38,483 - INFO - Starting scenario IoT_Dataset_HTTP_DDoS
+[2021-02-12 10:53:38,530 - INFO - Starting ANTE-AG fit
+[2021-02-12 10:53:55,249 - INFO - Automl model for scenario IoT_Dataset_HTTP_DDoS
+[2021-02-12 10:53:55,347 - INFO - {
+    "model": "LightGBMClassifierCustom",
+    "model_hyperparams": {
+        "boosting_type": "gbdt",
+        "feature_fraction": 0.9,
+        "learning_rate": 0.03,
+        "min_data_in_leaf": 5,
+        "num_boost_round": 10000,
+        "num_leaves": 128,
+        "num_threads": -1,
+        "objective": "binary",
+        "seed_value": 0,
+        "two_round": true,
+        "verbose": -1
+    },
+    "model_type": "LGBModel"
+}
+[2021-02-12 10:53:55,351 - INFO - Metrics for scenario IoT_Dataset_HTTP_DDoS test anticipation
+[2021-02-12 10:53:55,386 - INFO - [[528   0]
+ [  0 198]]
+[2021-02-12 10:53:55,394 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       528
+           1       1.00      1.00      1.00       198
+
+    accuracy                           1.00       726
+   macro avg       1.00      1.00      1.00       726
+weighted avg       1.00      1.00      1.00       726
+
+[2021-02-12 10:53:55,408 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 198,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 198,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 528,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 528,
+    'total_accuracy': 1.0,
+    'true_negative': 528,
+    'true_positive': 198}
+[2021-02-12 10:53:55,410 - INFO - Metrics for scenario IoT_Dataset_HTTP_DDoS test testing
+[2021-02-12 10:53:55,447 - INFO - [[2695    0]
+ [  41  826]]
+[2021-02-12 10:53:55,457 - INFO -               precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      2695
+           1       1.00      0.95      0.98       867
+
+    accuracy                           0.99      3562
+   macro avg       0.99      0.98      0.98      3562
+weighted avg       0.99      0.99      0.99      3562
+
+[2021-02-12 10:53:55,470 - INFO - Model metrics {   'bot_f1-score': 0.9757826343768458,
+    'bot_occurrences_in_training': 867,
+    'bot_precision': 1.0,
+    'bot_recall': 0.9527104959630911,
+    'bot_support': 867,
+    'false_negative': 41,
+    'false_positive': 0,
+    'nonbot_f1-score': 0.9924507457190205,
+    'nonbot_occurrences_in_training': 2695,
+    'nonbot_precision': 0.985014619883041,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 2695,
+    'total_accuracy': 0.9884896125772038,
+    'true_negative': 2695,
+    'true_positive': 826}
+[2021-02-12 10:53:55,471 - INFO - Starting scenario CICDOS_metrics
+[2021-02-12 10:53:55,512 - INFO - Starting ANTE-AG fit
+[2021-02-12 10:54:15,460 - INFO - Automl model for scenario CICDOS_metrics
+[2021-02-12 10:54:15,649 - INFO - {
+    "model": "LightGBMClassifierXT",
+    "model_hyperparams": {
+        "boosting_type": "gbdt",
+        "extra_trees": true,
+        "num_boost_round": 10000,
+        "num_threads": -1,
+        "objective": "binary",
+        "two_round": true,
+        "verbose": -1
+    },
+    "model_type": "LGBModel"
+}
+[2021-02-12 10:54:15,654 - INFO - Metrics for scenario CICDOS_metrics test anticipation
+[2021-02-12 10:54:15,724 - INFO - [[46  0]
+ [ 0  1]]
+[2021-02-12 10:54:15,735 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        46
+           1       1.00      1.00      1.00         1
+
+    accuracy                           1.00        47
+   macro avg       1.00      1.00      1.00        47
+weighted avg       1.00      1.00      1.00        47
+
+[2021-02-12 10:54:15,743 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 1,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 1,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 46,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 46,
+    'total_accuracy': 1.0,
+    'true_negative': 46,
+    'true_positive': 1}
+[2021-02-12 10:54:15,749 - INFO - Metrics for scenario CICDOS_metrics test testing
+[2021-02-12 10:54:15,801 - INFO - [[317   0]
+ [  0   4]]
+[2021-02-12 10:54:15,811 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       317
+           1       1.00      1.00      1.00         4
+
+    accuracy                           1.00       321
+   macro avg       1.00      1.00      1.00       321
+weighted avg       1.00      1.00      1.00       321
+
+[2021-02-12 10:54:15,823 - INFO - Model metrics {   'bot_f1-score': 1.0,
+    'bot_occurrences_in_training': 4,
+    'bot_precision': 1.0,
+    'bot_recall': 1.0,
+    'bot_support': 4,
+    'false_negative': 0,
+    'false_positive': 0,
+    'nonbot_f1-score': 1.0,
+    'nonbot_occurrences_in_training': 317,
+    'nonbot_precision': 1.0,
+    'nonbot_recall': 1.0,
+    'nonbot_support': 317,
+    'total_accuracy': 1.0,
+    'true_negative': 317,
+    'true_positive': 4}

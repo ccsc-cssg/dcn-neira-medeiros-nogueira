@@ -1,0 +1,9 @@
+estimator_group;estimator;scenario;dataset;total_accuracy;bot_precision;bot_recall;bot_f1-score;bot_support;nonbot_precision;nonbot_recall;nonbot_f1-score;nonbot_support;nonbot_occurrences_in_training;bot_occurrences_in_training;true_negative;false_positive;false_negative;true_positive
+AutoGluon;ANTE-AG;ISOT_metrics;anticipation;0.96;1.0;0.8571428571428571;0.923076923076923;7;0.9473684210526315;1.0;0.972972972972973;18;18;7;18;0;1;6
+AutoGluon;ANTE-AG;ISOT_metrics;testing;0.9769230769230769;1.0;0.875;0.9333333333333333;24;0.9724770642201835;1.0;0.986046511627907;106;106;24;106;0;3;21
+AutoGluon;ANTE-AG;CTU_metrics;anticipation;1.0;1.0;1.0;1.0;1;1.0;1.0;1.0;12;12;1;12;0;0;1
+AutoGluon;ANTE-AG;CTU_metrics;testing;1.0;1.0;1.0;1.0;40;1.0;1.0;1.0;29;29;40;29;0;0;40
+AutoGluon;ANTE-AG;IoT_Dataset_HTTP_DDoS;anticipation;1.0;1.0;1.0;1.0;198;1.0;1.0;1.0;528;528;198;528;0;0;198
+AutoGluon;ANTE-AG;IoT_Dataset_HTTP_DDoS;testing;0.9884896125772038;1.0;0.9527104959630911;0.9757826343768458;867;0.985014619883041;1.0;0.9924507457190205;2695;2695;867;2695;0;41;826
+AutoGluon;ANTE-AG;CICDOS_metrics;anticipation;1.0;1.0;1.0;1.0;1;1.0;1.0;1.0;46;46;1;46;0;0;1
+AutoGluon;ANTE-AG;CICDOS_metrics;testing;1.0;1.0;1.0;1.0;4;1.0;1.0;1.0;317;317;4;317;0;0;4

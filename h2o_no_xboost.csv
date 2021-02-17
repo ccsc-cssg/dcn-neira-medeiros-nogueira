@@ -1,0 +1,9 @@
+estimator_group;estimator;scenario;dataset;total_accuracy;bot_precision;bot_recall;bot_f1-score;bot_support;nonbot_precision;nonbot_recall;nonbot_f1-score;nonbot_support;nonbot_occurrences_in_training;bot_occurrences_in_training;true_negative;false_positive;false_negative;true_positive
+H2O;ANTE-H2-NOXBOOST;ISOT_metrics;anticipation;1.0;1.0;1.0;1.0;7;1.0;1.0;1.0;18;18;7;18;0;0;7
+H2O;ANTE-H2-NOXBOOST;ISOT_metrics;testing;0.9846153846153847;1.0;0.9166666666666666;0.9565217391304348;24;0.9814814814814815;1.0;0.9906542056074767;106;106;24;106;0;2;22
+H2O;ANTE-H2-NOXBOOST;CTU_metrics;anticipation;1.0;1.0;1.0;1.0;1;1.0;1.0;1.0;12;12;1;12;0;0;1
+H2O;ANTE-H2-NOXBOOST;CTU_metrics;testing;1.0;1.0;1.0;1.0;40;1.0;1.0;1.0;29;29;40;29;0;0;40
+H2O;ANTE-H2-NOXBOOST;IoT_Dataset_HTTP_DDoS;anticipation;1.0;1.0;1.0;1.0;198;1.0;1.0;1.0;528;528;198;528;0;0;198
+H2O;ANTE-H2-NOXBOOST;IoT_Dataset_HTTP_DDoS;testing;0.791970802919708;0.539179104477612;1.0;0.7006060606060607;867;1.0;0.7250463821892393;0.8406108840610884;2695;2695;867;1954;741;0;867
+H2O;ANTE-H2-NOXBOOST;CICDOS_metrics;anticipation;1.0;1.0;1.0;1.0;1;1.0;1.0;1.0;46;46;1;46;0;0;1
+H2O;ANTE-H2-NOXBOOST;CICDOS_metrics;testing;1.0;1.0;1.0;1.0;4;1.0;1.0;1.0;317;317;4;317;0;0;4
